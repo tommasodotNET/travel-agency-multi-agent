@@ -21,4 +21,4 @@ The process workflow is as follows:
 1. The user sends a request to the [Process Orchestrator](./src/TravelAgency.ProcessOrchestrator/Program.cs).
 2. The Process Orchestrator starts a new process
 3. The first step is the RetrieveOfferingsStep, which will invoke the [Offerings Expert Agent](./src/TravelAgency.OfferingsExpert/Program.cs) to retrieve the offerings.
-4. The second step is the PlanTripStep, which will invoke the [Trip Planner Agent](./src/trip-planner/src/trip_planner/__init__.py) to plan the trip.
+4. The second step is the PlanTripStep, which will invoke the [Trip Planner Agent Group Chat](./src/trip-planner/src/trip_planner/__init__.py) to plan the trip.
