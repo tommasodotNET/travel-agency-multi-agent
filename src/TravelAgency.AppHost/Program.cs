@@ -33,10 +33,5 @@ var tripPlanner = builder.AddUvApp("trip-planner", "../trip-planner", "trip-plan
 var processOrchestrator = builder.AddProject<Projects.TravelAgency_ProcessOrchestrator>("process-orchestrator")
     .WithReference(offeringsExpert)
     .WithReference(tripPlanner);
-
-var frontend = builder.AddNpmApp("frontend", "../frontend", "dev")
-    .WithNpmPackageInstallation()
-    .WithReference(processOrchestrator)
-    .WithHttpEndpoint(env: "PORT");
     
 builder.Build().Run();
