@@ -1,0 +1,7 @@
+POST http://127.0.0.1:8000/api/plan-trip
+Content-Type: application/json
+
+{
+  "offerings": "",
+  "userRequest": "A travel from Milan to London on Feb 2024"
+}
